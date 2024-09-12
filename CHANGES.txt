@@ -1,3 +1,6 @@
+= 1.2.2 =
+Support for newest versions of Android and iOS
+
 = 1.2.1 =
 Few fixes for Android and iOS compatibility bugs
 

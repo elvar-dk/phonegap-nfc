@@ -5,7 +5,6 @@
 //  (c) 2107-2020 Don Coleman
 
 #import "NfcPlugin.h"
-#import <CoreNFC/CoreNFC.h>
 
 @interface NfcPlugin() {
     NSString* sessionCallbackId;
@@ -126,9 +125,9 @@
         if (self.shouldUseTagReaderSession) {
             NSLog(@"Using NFCTagReaderSession");
 
-            self.nfcSession = [[NFCTagReaderSession alloc] initWithPollingOption: (NFCPollingISO14443 | NFCPollingISO15693)
-                                                                        delegate: self
-                                                                           queue: dispatch_get_main_queue()];
+            self.nfcSession = [[NFCTagReaderSession alloc]
+                       initWithPollingOption:(NFCPollingISO14443 | NFCPollingISO15693)
+                       delegate:self queue:dispatch_get_main_queue()];
 
         } else {
             NSLog(@"Using NFCTagReaderSession");
