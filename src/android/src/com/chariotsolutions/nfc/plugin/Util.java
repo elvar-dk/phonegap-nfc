@@ -5,6 +5,7 @@ import android.nfc.NdefRecord;
 import android.nfc.Tag;
 import android.nfc.tech.Ndef;
 import android.util.Log;
+import android.os.Parcelable;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
